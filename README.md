@@ -26,6 +26,7 @@
 
 
 
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -45,7 +46,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Issues</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact</a></li.
   </ol>
 </details><br>
 
@@ -73,8 +74,30 @@ To get a local copy up and running, follow these steps:
 ### Cloning the repository
 
 ```bash
-> git clone https://github.com/Vindhyaa-Saravanan/PhishShield.git
+> git clone https://github.com/JitendraNishad91/Code-Smesher---Phishshield-url-detection-.git
 ```
+
+## Installation Guide
+You can either clone the repo using Git or download the ZIP manually.
+
+### Clone using Git
+git clonehttps://github.com/JitendraNishad91/Code-Smesher---Phishshield-url-detection-
+cd phishshield
+
+### Create virtual environment
+python -m venv venv
+
+### Activate it
+### For Windows:
+venv\Scripts\activate
+### For Mac/Linux:
+source venv/bin/activate
+
+### Install dependencies
+pip install -r requirnment.txt
+
+### run the python file
+  python app.py
 
 ### Setting up the extension
 
@@ -94,12 +117,62 @@ Ensure the saved model file (phishshield_model.onnx) is present in the extension
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# 🧠 Usage / Examples
+
+PhishShield works automatically in the background once installed.  
+Follow the examples below to understand how it behaves with different URLs 👇
+
+---
+
+## 🧩 Example 1 — Safe Website
+
+**https://www.youtube.com/**  
+
+
+**Process:**  
+PhishShield sends this URL to the backend `/predict` API.  
+Backend response:
+```json
+{
+  "risk_percent": 29,
+  "label_pred": "safe"
+}
+```
+ <img src="Screenshot 2025-11-01 223716.png" alt="Logo" width="400" height="400" align-item = "centre" display = "flex">
+  </a>
+
+
+## 🧩 Example 2 — Suspicious or Phishing Website
+
+**https://bdg2612.com/#/?invitationCode=3167117838046**  
+
+
+**Process:**  
+PhishShield sends this URL to the backend `/predict` API.  
+Backend response:
+```json
+{
+  "risk_percent": 89,
+  "label_pred": "phishing "
+}
+```
+
+**Result** 
+Block the website 
+
+<img src="Screenshot 2025-11-01 223757.png" alt="Logo" width="400" height="400" align-item = "centre" display = "flex" >
+  </a>
+  <img src="Screenshot 2025-11-01 223737.png" alt="Logo" width="400" height="400" align-item = "centre" display = "flex">
+    </a>
+  
+
+
 
 
 <!-- ISSUES -->
 ## Issues
 
-See the [open issues](https://github.com/Vindhyaa-Saravanan/PhishShield/issues) for a full list of known issues, priorities and assignees.
+See the [open issues](https://github.com/JitendraNishad91/Code-Smesher---Phishshield-url-detection-/issues) for a full list of known issues, priorities and assignees.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,11 +181,11 @@ See the [open issues](https://github.com/Vindhyaa-Saravanan/PhishShield/issues) 
 <!-- CREATED BY -->
 ## Created by
 
-* Vindhyaa Saravanan - [@Vindhyaa-Saravanan](https://github.com/Vindhyaa-Saravanan) - sc21vs@leeds.ac.uk
+* Code Sark - [@JitendraNishad91](https://github.com/JitendraNishad91) - sc21vs@leeds.ac.uk
 
 
 ### Project Links:
 
-* [Project Repository](https://github.com/Vindhyaa-Saravanan/PhishShield)
+* [Project Repository](https://github.com/JitendraNishad91?tab=repositories)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
